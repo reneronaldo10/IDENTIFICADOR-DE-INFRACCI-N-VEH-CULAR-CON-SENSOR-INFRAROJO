@@ -23,10 +23,12 @@ void loop()
   duracion = pulseIn(hecho, HIGH);
   distancia = duracion/58.2;
   
-  if (distancia < 45){
-    Serial.println("Ha sobrepasado la linea de pare");
+  if (distancia < 3250){
+    Serial.println(1);
     delay(5000);
-   }
+   }else
+    Serial.println(0);
+    delay(5000);
    
    
 }
