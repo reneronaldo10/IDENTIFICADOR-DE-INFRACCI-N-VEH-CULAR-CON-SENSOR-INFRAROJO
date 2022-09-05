@@ -23,7 +23,7 @@ void loop()
   duracion = pulseIn(hecho, HIGH);
   distancia = duracion/58.2;
   
-  if (distancia < 3250){
+  if (distancia < 100){
     Serial.println(1);
     delay(5000);
    }else
